@@ -1,5 +1,3 @@
-
-
 import json
 import os
 import requests
@@ -32,3 +30,6 @@ def github():
     else:
          print("Payload delivered successfully, code {}.".format(result.status_code))
     return jsonify(success=True)
+
+if __name__ == '__main__':
+    app.run()
