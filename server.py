@@ -11,7 +11,7 @@ def get_root():
 
 @app.route('/', methods=['POST'])
 def github():
-    discord_url = 'https://discord.com/api/webhooks/1065405532464238742/nrYJf0bneeJAt1gx1O7LMQME41hn67CEL6JSzfyRUsJ8k6gO_YzzL7BZ67nSF8bwFFdf'
+    discord_url = ''
     payload = json.loads(request.data)
     print(payload['starred_at'])
     if payload['starred_at'] == None:
